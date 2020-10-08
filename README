@@ -1,0 +1,52 @@
+//// ************************************************************************ \\\\
+Universitatea POLITEHNICA din Bucuresti - Facultatea de Automatica si Calculatoare
+
+**********************************************************************************
+Nume student: Bordincel Andra-Maria, grupa 315CC.
+An de studiu: 2019 - 2020.
+Tema proiect: Joc minimal in limbajul C, Battleship.
+
+**********************************************************************************
+
+A) Detalii de implementare:
+ 
+- Se citeste numele hartii;
+- Se porneste meniul de joc
+
+i) Meniul
+	Optiunile se pot alege uzitandu-se sagetile, iar pentru selectarea unei
+optiuni se va folosi tasta ENTER. Optiunile pe care am reusit sa le implementez
+sunt cea de New Game, Instructions(bonus) si Quit.
+
+ii) New Game
+	La alegerea optiunii New Game se vor afisa cele doua grid-uri, unul
+pentru jucator si unul pentru calculator, dar si instructiunile optiunilor
+de joc. Pentru a ataca una din celulele calculatorului se vor folosi tastele
+cu sageti si ENTER pentru a afisa continutul celulei. Se poate reveni la meniul
+principal apasand tasta Q. De asemenea, in functia "newgame" ce instantiaza
+aceasta optiune, realizez o asezare aleatoare a navelor calculatorului.
+
+iii) Instructions
+        La alegerea acestei optiuni se vor afisa toate instructiunile necesare
+pentru a intelege jocul. Se poate reveni la meniul principal apasand orice tasta.
+Vectorii din functia "instructions" contin informatiile din fiecare camp al
+meniului.
+
+iv) Quit
+       La alegerea acestei optiuni se va deschide o noua fereastra ce il va saluta
+politicos pe jucator si numara 3 secunde pana la parasirea jocului.
+
+BONUS: culori, in meniul principal cand se va da in jos se aude un sunet, salutul
+politicos la parasirea jocului si timpul pana la iesire. Titlul este realizat cu
+cate o reprezentare prin ferestre colorate a fiecarei litere.
+
+- Dupa iesirea din joc, se inchide fereastra si se returneaza rezultatul 1.
+
+B) Detalii de pornire a jocului:
+
+- Fisierul Makefile contine reguli pentru build, run si clean. Regula de build
+include la compilare si biblioteca grafica "ncurses". Regula run deschide
+fereastra de jos si include harta jucatorului uman. Regula clean sterge numele
+executabilului creat de regula build. 
+
+Multumesc pentru timpul acordat!
